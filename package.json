@@ -1,6 +1,6 @@
 {
-  "name": "cocktail",
-  "version": "0.1.2",
+  "name": "ktan-cocktail",
+  "version": "0.1.1",
   "description": "A couple of reusable UI React components",
   "main": "index.js",
   "scripts": {
