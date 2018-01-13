@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "ktan-cocktail",
   "version": "0.1.1",
   "description": "A couple of reusable UI React components",
@@ -43,4 +44,41 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1"
   }
+=======
+  "name": "loading-button",
+  "version": "1.0.0",
+  "description": "loading-button React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "nwb": "0.21.x",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ]
+>>>>>>> Initial commit from nwb v0.21.1
 }
