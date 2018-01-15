@@ -6,6 +6,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 import React, { Component } from 'react';
 
+export { VerticalLayout } from './VerticalLayout';
+
 var _default = function (_Component) {
   _inherits(_default, _Component);
 

@@ -28,9 +28,9 @@
     "react-dom": "^16.2.0"
   },
   "author": "Frederic MAMATH",
-  "homepage": "https://github.com/FredericKtan/cocktail",
+  "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/FredericKtan/cocktail",
   "keywords": [
     "react-component"
   ]
