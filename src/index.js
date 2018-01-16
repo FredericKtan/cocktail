@@ -1,11 +1,7 @@
-import React, {Component} from 'react'
+/* global Button */
 
 export { VerticalLayout } from './VerticalLayout';
+export { HorizontalLayout } from './HorizontalLayout';
+export { Button } from './Button';
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export default Button;
