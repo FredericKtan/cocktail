@@ -2,4 +2,18 @@
 
 A bunch of reusable component in React.
 
-## Instruction
+## Installation
+
+`
+npm install --save ktan-cocktail
+`
+
+## Usage
+
+- `<Button />`
+- `<VerticalLayout />`
+- `<HorizontalLayout />`
+
+## Tests
+
+## Initial release
