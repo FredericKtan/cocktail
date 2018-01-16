@@ -1,0 +1,18 @@
+.view {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.view:focus {
+  outline: none;
+}
+
+.view:hover {
+  background-color: rgb(70, 100, 175);
+  color: white;
+}
