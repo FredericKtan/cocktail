@@ -31,13 +31,13 @@ $white: (
 
 $base-red: #f44336 ;
 $red: (
-  base: $base-white,
-  lightest: lighten($base-white, $lightest),
-  lighter: lighten($base-white, $lighter),
-  light: lighten($base-white, $light),
-  dark: darken($base-white, $dark),
-  darker: darken($base-white, $darker),
-  darkest: darken($base-white, $darkest),
+  base: $base-red,
+  lightest: lighten($base-red, $lightest),
+  lighter: lighten($base-red, $lighter),
+  light: lighten($base-red, $light),
+  dark: darken($base-red, $dark),
+  darker: darken($base-red, $darker),
+  darkest: darken($base-red, $darkest),
 );
 
 $base-green: #8bc34a ;
