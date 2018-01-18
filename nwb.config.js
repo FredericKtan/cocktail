@@ -11,11 +11,9 @@ module.exports = {
       'sass-css': {
         modules: true,
         localIdentName: '[hash:base64:5]',
-        data: '@import "_variables";',
-        includePaths: path.resolve(__dirname, './src/styles'),
+        data: '@import "_variables";', // Not working yet
+        includePaths: [path.resolve('./src/styles')], // Not working yet
       },
     },
   },
 };
-
-console.log(path.resolve(__dirname, './src/styles'));
