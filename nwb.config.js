@@ -8,11 +8,11 @@ module.exports = {
   },
   webpack: {
     rules: {
-      'sass-css': {
+      sass: {
         modules: true,
+        loader: 'sass-loader',
         localIdentName: '[hash:base64:5]',
-        data: '@import "_variables";', // Not working yet
-        includePaths: [path.resolve('./src/styles')], // Not working yet
+        includePaths: [path.resolve('./node_modules')], // Not working yet
       },
     },
   },
