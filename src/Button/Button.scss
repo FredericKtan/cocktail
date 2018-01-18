@@ -1,5 +1,4 @@
-
-@import '../styles/colors';
+@import '../styles/_variables';
 
 .view {
   background-color: transparent;
@@ -17,5 +16,5 @@
 
 .view:hover {
   background-color: Color(red);
-  color: white;
+  color: Color(green);
 }
