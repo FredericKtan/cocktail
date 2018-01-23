@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './HorizontalLayout.scss';
+import styles from './styles';
 
 export const HorizontalLayout = ({ children }) => (
-  <div className={styles.view}>
+  <div>
     { children }
   </div>
 );
