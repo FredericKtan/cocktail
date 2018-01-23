@@ -1,4 +1,5 @@
-.view {
-  display: flex;
-  flex-direction: column;
-}
+export default {
+  view: {
+    display: 'flex',
+  },
+};
