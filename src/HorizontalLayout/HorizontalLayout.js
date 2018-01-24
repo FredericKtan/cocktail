@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './styles';
 
 export const HorizontalLayout = ({ children }) => (
-  <div>
+  <div style={{ ...styles.view }}>
     { children }
   </div>
 );

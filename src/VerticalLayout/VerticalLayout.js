@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './styles';
+
 export const VerticalLayout = ({ children }) => (
-  <div>
+  <div style={{ ...styles.view }}>
     { children }
   </div>
 );

@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Button = ({ onClick, value }) => (
+import styles from './styles';
+
+export const Button = ({ onClick, style, value }) => (
   <button
     onClick={onClick}
+    style={{ ...styles.view, ...style }}
   >
     { value }
   </button>
@@ -12,11 +15,13 @@ export const Button = ({ onClick, value }) => (
 Button.propTypes = {
   onClick: PropTypes.func,
   value: PropTypes.string,
+  style: PropTypes.objectOf(PropTypes.string),
 };
 
 Button.defaultProps = {
   onClick: () => {},
   value: '',
+  style: {},
 };
 
 export default Button;
