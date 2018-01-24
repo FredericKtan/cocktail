@@ -4,4 +4,27 @@ module.exports = {
     esModules: true,
     umd: false,
   },
+  webpack: {
+    rules: {
+      sass: {
+        modules: true,
+        loader: 'sass-loader',
+        localIdentName: '[hash:base64:5]',
+      },
+    },
+    extra: {
+      module: {
+        rules: [{
+          test: /\.scss$/,
+          use: [{
+            loader: 'style-loader',
+          }, {
+            loader: 'css-loader',
+          }, {
+            loader: 'sass-loader',
+          }]
+        }]
+      },
+    },
+  },
 };

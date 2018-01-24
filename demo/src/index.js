@@ -7,10 +7,12 @@ import {
   VerticalLayout,
 } from '../../src';
 
+import styles from '../../src/Button/Button.scss';
+
 class Demo extends Component {
   render() {
     return <div>
-      <h1>loading-button Demo</h1>
+      <h1 className={styles.view}>loading-button Demo</h1>
       <VerticalLayout>
         <HorizontalLayout>
           <Button style={{ flex: '1' }} value="Hello" onClick={() => console.log('hello')} />

@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './styles';
+import stylesJS from './styles';
+import stylesCSS from './Button.css';
 
 export const Button = ({ onClick, style, value }) => (
   <button
+    className="view"
     onClick={onClick}
-    style={{ ...styles.view, ...style }}
+    style={{ ...stylesJS.view, ...style }}
   >
     { value }
   </button>

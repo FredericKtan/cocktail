@@ -1,5 +1,5 @@
 export default {
   view: {
-    backgroundColor: 'red',
+    color: 'yellow',
   },
 };

@@ -1,0 +1,5 @@
+.view {
+  background-color: blue; }
+
+.view:hover {
+  background-color: yellow; }
