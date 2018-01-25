@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   type: 'react-component',
   npm: {
@@ -22,8 +24,14 @@ module.exports = {
             loader: 'css-loader',
           }, {
             loader: 'sass-loader',
-          }]
-        }]
+            options: {
+              data: '@import "colors.scss";',
+              includePaths: [
+                path.resolve(__dirname, './src/styles'),
+              ],
+            },
+          }],
+        }],
       },
     },
   },

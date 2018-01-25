@@ -1,5 +1,5 @@
 .view {
-  background-color: blue; }
+  background-color: Color(blue, lightest); }
 
 .view:hover {
   background-color: yellow; }
