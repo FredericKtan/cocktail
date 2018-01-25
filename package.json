@@ -1,6 +1,6 @@
 {
   "name": "ktan-cocktail",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "A bunch of reusable components in React",
   "main": "lib/index.js",
   "module": "es/index.js",
