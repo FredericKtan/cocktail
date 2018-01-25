@@ -1,5 +1,9 @@
 export default {
   view: {
-    color: 'yellow',
+    color: 'white',
+    backgroundColor: 'blue',
+  },
+  hoveredView: {
+    backgroundColor: 'red',
   },
 };

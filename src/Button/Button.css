@@ -1,5 +1,2 @@
 .view {
-  background-color: Color(blue, lightest); }
-
-.view:hover {
-  background-color: yellow; }
+  transition: background-color 300ms ease-in-out; }

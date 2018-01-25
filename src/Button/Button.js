@@ -1,18 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import stylesJS from './styles';
 import stylesCSS from './Button.css';
 
-export const Button = ({ onClick, style, value }) => (
-  <button
-    className="view"
-    onClick={onClick}
-    style={{ ...stylesJS.view, ...style }}
-  >
-    { value }
-  </button>
-);
+export class Button extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isHovered: false,
+    };
+
+    this.onToggleHover = this.onToggleHover.bind(this);
+  }
+
+  onToggleHover(state) {
+    this.setState({
+      isHovered: state,
+    });
+  }
+
+  render() {
+    const { onClick, style, value } = this.props;
+    const { isHovered } = this.state;
+    const isHoveredStyle = isHovered ? stylesJS.hoveredView : {};
+
+    return (
+      <button
+        className="view"
+        onClick={onClick}
+        onMouseEnter={() => this.onToggleHover(true)}
+        onMouseLeave={() => this.onToggleHover(false)}
+        style={{ ...stylesJS.view, ...isHoveredStyle, ...style }}
+      >
+        { value }
+      </button>
+    )
+  };
+};
 
 Button.propTypes = {
   onClick: PropTypes.func,
